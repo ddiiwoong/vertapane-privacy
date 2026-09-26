@@ -1,0 +1,9 @@
+# macOS / shell artifacts
+.DS_Store
+._*
+.hushlogin
+
+# Editor
+.vscode/
+.idea/
+*.swp
