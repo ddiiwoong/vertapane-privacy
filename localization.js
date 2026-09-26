@@ -128,6 +128,8 @@
     "번역 설정": "Translation settings",
     "Bedrock API 키는 현재 브라우저 세션에만 보관되며 Chrome을 종료하거나 확장 프로그램을 다시 로드하면 삭제됩니다.":
       "Your Bedrock API key is kept only for the current browser session and is removed when Chrome closes or the extension reloads.",
+    "Bedrock API 키는 기본적으로 현재 브라우저 세션에만 보관되며, 아래에서 이 기기에 저장하도록 직접 선택할 수 있습니다.":
+      "By default your Bedrock API key is kept only for the current browser session. You can choose below to store it on this device instead.",
     "UI 언어": "Interface language",
     "브라우저 언어": "Browser language",
     "데이터 처리 안내 및 동의": "Data processing notice and consent",
@@ -140,6 +142,8 @@
       "Visited URLs, page titles, translation history, and HTML snapshots are stored only in this browser when history is enabled.",
     "Bedrock API 키는 세션 저장소에만 보관되며 광고·분석·판매 목적으로 사용하지 않습니다.":
       "The Bedrock API key is kept only in session storage and is not used for advertising, analytics, or sale.",
+    "Bedrock API 키는 기본적으로 세션 저장소에만 보관합니다. 이 기기에 저장하도록 직접 선택한 경우에만 디스크에 함께 보관하며, 어느 경우에도 광고·분석·판매 목적으로 사용하지 않습니다.":
+      "By default the Bedrock API key is kept only in session storage. It is written to disk only if you explicitly choose to store it on this device, and in either case it is never used for advertising, analytics, or sale.",
     "개인정보 처리방침 전문 보기": "View the full privacy policy",
     "위 데이터 처리 내용을 이해했으며 번역 요청에 동의합니다.":
       "I understand the data processing described above and consent to translation requests.",
@@ -148,10 +152,18 @@
     "Amazon Bedrock 연결": "Amazon Bedrock connection",
     "Bedrock API 키": "Bedrock API key",
     "브라우저를 다시 열면 다시 입력해야 합니다": "Enter it again after reopening the browser",
+    "Bedrock API 키 입력": "Enter your Bedrock API key",
     "보기": "Show",
     "숨기기": "Hide",
     "키는 디스크의 로컬 설정에 저장하지 않고 현재 세션에서만 사용합니다.":
       "The key is not stored in local settings on disk and is used only for this session.",
+    "이 기기에 키 저장": "Store the key on this device",
+    "브라우저를 다시 열어도 키가 유지됩니다. 확장 프로그램 저장소는 암호화되지 않으므로 이 기기를 사용할 수 있는 사람이나 프로그램이 키를 읽을 수 있습니다. 공용 기기에서는 켜지 마세요.":
+      "The key is kept when you reopen the browser. Extension storage is not encrypted, so anyone or anything with access to this device can read it. Do not enable this on a shared device.",
+    "이 기기에 키를 저장합니다. 브라우저를 다시 열어도 유지되며 암호화되지 않습니다.":
+      "The key is stored on this device. It survives reopening the browser and is not encrypted.",
+    "이 기기에 키를 저장하도록 설정했습니다. 저장은 암호화되지 않습니다.":
+      "Storing the key on this device is enabled. The stored key is not encrypted.",
     "Amazon Bedrock API 키 발급 방법": "How to create an Amazon Bedrock API key",
     "Bedrock Runtime 상용 리전": "Bedrock Runtime commercial regions",
     "서울": "Seoul",
@@ -246,6 +258,15 @@
     "웹사이트 콘텐츠": "Website content",
     "사용자가 번역을 실행한 선택 문장, 현재 화면 또는 페이지의 표시 텍스트를 처리합니다. 사용자가 자동 번역 기능을 켠 경우 새로 표시되는 텍스트도 번역 요청에 포함될 수 있습니다.":
       "We process selected text, visible content, or page text when you start a translation. Newly displayed text may also be included when automatic translation is enabled.",
+    "기본적으로 사용자가 입력한 키는 메모리에만 존재하는 세션 저장소에 보관하며, Chrome 종료 또는 확장 프로그램 재로드·업데이트·사용 중지 시 삭제됩니다.":
+      "By default the key you enter is held in memory-only session storage and is removed when Chrome closes or the extension is reloaded, updated, or disabled.",
+    "설정에서 “이 기기에 키 저장”을 직접 켜면 브라우저를 다시 열어도 키를 쓸 수 있도록 이 기기의 로컬 저장소에도 함께 보관합니다. 이 저장소는 암호화되지 않으므로 해당 기기를 사용할 수 있는 사람이나 프로그램이 키를 읽을 수 있습니다.":
+      "If you turn on “Store the key on this device” in settings, the key is also kept in this device's local storage so it remains available after you reopen the browser. That storage is not encrypted, so anyone or anything with access to the device can read the key.",
+    "이 설정은 기본값이 꺼짐이며 언제든 다시 끌 수 있고, 끄고 저장하면 기기에 저장된 키를 즉시 삭제합니다. 번역 기록에는 어느 경우에도 키를 저장하지 않습니다.":
+      "The setting is off by default and can be turned off again at any time; turning it off and saving deletes the key stored on the device immediately. The key is never written to translation history.",
+    "API 키 기본값: 현재 Chrome 세션 동안만 보관": "API key default: kept only for the current Chrome session",
+    "“이 기기에 키 저장”을 켠 경우 API 키: 사용자가 끄거나 삭제할 때까지 이 기기에 보관":
+      "API key with “Store the key on this device” enabled: kept on this device until you turn it off or delete it",
     "사용자가 직접 입력한 키는": "The key you enter is stored in",
     "에만 보관됩니다. 디스크의 로컬 설정이나 번역 기록에는 저장하지 않으며 Chrome 종료, 확장 프로그램 재로드·업데이트·사용 중지 시 삭제될 수 있습니다.":
       " for the current browser session only. It is not stored in local settings on disk or translation history and may be removed when Chrome closes or the extension is reloaded, updated, or disabled.",
@@ -266,6 +287,8 @@
     "광고, 사용자 추적, 행동 프로파일링, 신용평가 또는 데이터 판매 목적으로 사용하지 않습니다.":
       "Data is not used for advertising, user tracking, behavioral profiling, credit evaluation, or sale.",
     "외부 전송과 제3자 처리": "External transfer and third-party processing",
+    "사용자가 실제 번역을 실행하면 번역할 텍스트, 목표 언어, 원문 언어 설정과 문체 설정이 사용자가 선택한 AWS 리전의 Amazon Bedrock으로 HTTPS 전송됩니다. 여러 리전을 선택하면 오류 발생 시 다음 리전으로 동일한 번역 요청을 다시 보낼 수 있습니다. 인증을 위해 사용자가 입력한 API 키가 해당 요청의 Authorization 헤더에 사용됩니다.":
+      "When you start a real translation, the text, target language, source-language setting, and style setting are sent over HTTPS to Amazon Bedrock in your selected AWS regions. With multiple regions selected, the same request may be retried in the next region after an error. The API key you entered is used in the request Authorization header.",
     "사용자가 실제 번역을 실행하면 번역할 텍스트, 목표 언어, 원문 언어 설정과 문체 설정이 사용자가 선택한 AWS 리전의 Amazon Bedrock으로 HTTPS 전송됩니다. 여러 리전을 선택하면 오류 발생 시 다음 리전으로 동일한 번역 요청을 다시 보낼 수 있습니다. 인증을 위해 세션 API 키가 해당 요청의 Authorization 헤더에 사용됩니다.":
       "When you start a real translation, the text, target language, source-language setting, and style setting are sent over HTTPS to Amazon Bedrock in your selected AWS regions. With multiple regions selected, the same request may be retried in the next region after an error. The session API key is used in the request Authorization header.",
     "Amazon Bedrock의 데이터 처리는 사용자의 AWS 계정 설정과 AWS 약관 및 개인정보 관련 정책의 적용을 받습니다. VertaPane 개발자는 번역 요청을 중계하는 별도 서버를 운영하지 않으며 데이터를 판매하거나 다른 제3자에게 제공하지 않습니다.":
@@ -278,6 +301,8 @@
       "Selection, manual, and page history: up to 100 recent items",
     "번역 페이지 스냅샷: 최근 20건, 건당 최대 8MB까지 보관":
       "Translated page snapshots: up to 20 recent items, 8 MB each",
+    "사이드바의 기록 화면에서 개별 기록 또는 전체 기록을 삭제할 수 있습니다. 설정에서 기록 저장을 끌 수 있으며, 데이터 처리 동의를 철회하고 저장하면 세션과 기기에 저장된 API 키가 모두 삭제되고 이후 외부 번역 요청이 차단됩니다. “이 기기에 키 저장”을 끄고 저장해도 기기에 저장된 키가 삭제됩니다. 확장 프로그램을 제거하면 Chrome이 해당 확장 프로그램의 로컬 저장 데이터를 삭제합니다.":
+      "You can delete individual or all records from the side-panel history view. History can be disabled in settings. Withdrawing consent and saving removes the API key from both session and device storage and blocks subsequent external translation requests. Turning off “Store the key on this device” and saving also deletes the key stored on the device. Removing the extension causes Chrome to delete its local extension data.",
     "사이드바의 기록 화면에서 개별 기록 또는 전체 기록을 삭제할 수 있습니다. 설정에서 기록 저장을 끌 수 있으며, 데이터 처리 동의를 철회하고 저장하면 세션 API 키가 삭제되고 이후 외부 번역 요청이 차단됩니다. 확장 프로그램을 제거하면 Chrome이 해당 확장 프로그램의 로컬 저장 데이터를 삭제합니다.":
       "You can delete individual or all records from the side-panel history view. History can be disabled in settings. Withdrawing consent and saving removes the session API key and blocks subsequent external translation requests. Removing the extension causes Chrome to delete its local extension data.",
     "브라우저 권한 사용": "Browser permissions",
@@ -302,8 +327,12 @@
     "심사용 데모 모드를 저장했습니다.": "Reviewer demo mode saved.",
     "설정을 저장했습니다. API 키는 현재 세션에서만 유지됩니다.":
       "Settings saved. The API key remains available only for this session.",
+    "설정을 저장했습니다. API 키를 이 기기에 저장했습니다.":
+      "Settings saved. The API key is stored on this device.",
     "동의를 철회하고 세션 API 키를 삭제했습니다.":
       "Consent withdrawn and the session API key removed.",
+    "동의를 철회하고 저장된 API 키를 삭제했습니다.":
+      "Consent withdrawn and the stored API key removed.",
     "연결을 확인하는 중…": "Testing connection…",
     "데이터 처리 안내를 확인하고 동의해 주세요.":
       "Review the data processing notice and provide consent.",
