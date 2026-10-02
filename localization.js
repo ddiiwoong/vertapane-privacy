@@ -145,6 +145,7 @@
     "Bedrock API 키는 기본적으로 세션 저장소에만 보관합니다. 이 기기에 저장하도록 직접 선택한 경우에만 디스크에 함께 보관하며, 어느 경우에도 광고·분석·판매 목적으로 사용하지 않습니다.":
       "By default the Bedrock API key is kept only in session storage. It is written to disk only if you explicitly choose to store it on this device, and in either case it is never used for advertising, analytics, or sale.",
     "개인정보 처리방침 전문 보기": "View the full privacy policy",
+    "Chrome 웹 스토어 등록 페이지 열기": "Open the Chrome Web Store listing",
     "위 데이터 처리 내용을 이해했으며 번역 요청에 동의합니다.":
       "I understand the data processing described above and consent to translation requests.",
     "동의를 철회하고 저장하면 API 키가 삭제되고 외부 번역 요청이 중지됩니다.":
