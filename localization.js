@@ -98,14 +98,14 @@
     "선택 번역": "Selection",
     "직접 번역": "Manual",
     "캐시": "Cache",
-    "데모": "Demo",
+    "미리보기": "Preview",
     "호출 중": "Requesting",
     "실패": "Failed",
     "번역 적용됨": "Translation applied",
     "현재 탭 연결됨": "Current tab connected",
     "탭 연결 없음": "No tab connected",
     "번역 대기 중": "Ready to translate",
-    "심사용 데모 · Bedrock 요청 없음": "Reviewer demo · No Bedrock request",
+    "미리보기 · Bedrock 요청 없음": "Preview · No Bedrock request",
     "VertaPane 데모": "VertaPane demo",
     "캐시 · 추가 토큰 0": "Cache · 0 additional tokens",
     "VertaPane 번역": "VertaPane translation",
@@ -196,10 +196,10 @@
     "Bedrock 모델 ID": "Bedrock model ID",
     "일반 페이지 번역에 사용할 모델을 선택하세요.":
       "Choose the model used for regular page translation.",
-    "Chrome 웹 스토어 심사": "Chrome Web Store review",
-    "심사용 로컬 데모 모드": "Local reviewer demo mode",
-    "API 키와 Bedrock 요청 없이 화면·선택·기록 기능을 점검합니다. 실제 언어 번역 대신 데모 표시가 붙은 원문을 사용합니다.":
-      "Test visible content, selection, and history features without an API key or Bedrock request. Demo-marked source text is used instead of a real translation.",
+    "API 키 없이 둘러보기": "Try it without an API key",
+    "미리보기 모드": "Preview mode",
+    "AWS를 설정하기 전에 화면·선택·기록 기능을 둘러봅니다. API 키도 Bedrock 요청도 쓰지 않으며, 실제 언어 번역 대신 원문을 그대로 사용합니다. 미리보기 여부는 결과 카드와 기록에 표시하고, 저장한 API 키는 지우지 않습니다.":
+      "Look around the visible content, selection, and history features before setting up AWS. It uses no API key and makes no Bedrock request, and source text is used unchanged instead of a real translation. The preview state is shown on the result card and in history, and a saved API key is not deleted.",
     "모델 성능 비교": "Model performance comparison",
     "모델 비교 기능 표시": "Show model comparison",
     "선택 번역 결과 버튼과 우클릭 비교 메뉴를 함께 켜거나 끕니다.":
@@ -220,9 +220,14 @@
     "빠름 (5)": "Fast (5)",
     "동시에 처리할 Bedrock 요청 수입니다. 제한 오류가 발생하면 값을 낮추세요.":
       "Number of concurrent Bedrock requests. Lower it if throttling occurs.",
+    "페이지 위 버튼": "On-page buttons",
     "문장을 선택하면 빠른 번역 버튼 표시": "Show quick translate button on text selection",
     "선택 직후 작은 번역 버튼을 페이지 위에 띄웁니다.":
       "Displays a small translate button on the page immediately after selection.",
+    "페이지 오른쪽에 사이드바 열기 버튼 표시":
+      "Show the side panel button on the right edge of the page",
+    "모든 페이지 오른쪽 가장자리에 V 번역 버튼을 고정합니다. 꺼 두면 팝업이나 우클릭 메뉴로 사이드바를 엽니다.":
+      "Pins the V translate button to the right edge of every page. When off, open the side panel from the popup or the context menu.",
     "번역 기록·페이지 캐시": "Translation history and page cache",
     "이 브라우저에 번역 기록 저장": "Save translation history in this browser",
     "기록은 최근 100건, 사이트 번역본은 최근 20건을 브라우저 내부에만 보관합니다. 번역본은 건당 최대 8MB이며 API 키는 기록에 포함하지 않습니다.":
@@ -232,7 +237,7 @@
       "Manage translation history and saved page snapshots together.",
     "기록·캐시 삭제": "Clear history and cache",
     "연결 테스트": "Test connection",
-    "데모 확인": "Test demo",
+    "미리보기 확인": "Test preview",
     "설정 저장": "Save settings",
     "VertaPane 번역 기록": "VertaPane translation archive",
     "번역본을 불러오는 중": "Loading translation",
@@ -294,8 +299,8 @@
       "When you start a real translation, the text, target language, source-language setting, and style setting are sent over HTTPS to Amazon Bedrock in your selected AWS regions. With multiple regions selected, the same request may be retried in the next region after an error. The session API key is used in the request Authorization header.",
     "Amazon Bedrock의 데이터 처리는 사용자의 AWS 계정 설정과 AWS 약관 및 개인정보 관련 정책의 적용을 받습니다. VertaPane 개발자는 번역 요청을 중계하는 별도 서버를 운영하지 않으며 데이터를 판매하거나 다른 제3자에게 제공하지 않습니다.":
       "Amazon Bedrock processing is governed by your AWS account settings, AWS terms, and applicable privacy policies. The VertaPane developer does not operate a translation relay server, sell data, or provide it to other third parties.",
-    "심사용 로컬 데모 모드에서는 번역 텍스트와 API 키가 외부로 전송되지 않습니다.":
-      "In local reviewer demo mode, translation text and API keys are not sent externally.",
+    "미리보기 모드에서는 번역 텍스트와 API 키가 외부로 전송되지 않습니다.":
+      "In preview mode, translation text and API keys are not sent externally.",
     "보관 기간과 삭제 방법": "Retention and deletion",
     "API 키: 현재 Chrome 세션 동안만 보관": "API key: retained only for the current Chrome session",
     "선택·직접 입력·페이지 기록: 최근 100건까지 보관":
@@ -325,7 +330,7 @@
       "If data processing changes, this policy's effective date will be updated and the extension will request consent again when required.",
     "개인정보 관련 문의는 Chrome 웹 스토어의 VertaPane 등록 페이지에 표시된 개발자 지원 이메일을 이용해 주세요.":
       "For privacy questions, use the developer support email shown on the VertaPane Chrome Web Store listing.",
-    "심사용 데모 모드를 저장했습니다.": "Reviewer demo mode saved.",
+    "미리보기 모드를 저장했습니다.": "Preview mode saved.",
     "설정을 저장했습니다. API 키는 현재 세션에서만 유지됩니다.":
       "Settings saved. The API key remains available only for this session.",
     "설정을 저장했습니다. API 키를 이 기기에 저장했습니다.":
@@ -581,7 +586,7 @@
         .replace(/선택 문장 번역 중/g, "Translating selected text")
         .replace(/기록에서 불러옴/g, "Loaded from history")
         .replace(/호출 중/g, "Requesting")
-        .replace(/심사용 데모/g, "Reviewer demo")
+        .replace(/미리보기/g, "Preview")
         .replace(/추가 토큰 ([\d.,]+)/g, "$1 additional tokens")
         .replace(/추가 토큰/g, "additional tokens")
         .replace(/ · Bedrock 요청 없음/g, " · No Bedrock request")
@@ -616,7 +621,7 @@
       .replace(/Translating selected text/g, "선택 문장 번역 중")
       .replace(/Loaded from history/g, "기록에서 불러옴")
       .replace(/Requesting/g, "호출 중")
-      .replace(/Reviewer demo/g, "심사용 데모")
+      .replace(/Preview/g, "미리보기")
       .replace(/([\d.,]+) additional tokens/g, "추가 토큰 $1")
       .replace(/additional tokens/g, "추가 토큰")
       .replace(/ · No Bedrock request/g, " · Bedrock 요청 없음")
